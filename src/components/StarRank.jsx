@@ -1,30 +1,14 @@
 import React, { useState } from 'react';
 import { Rating } from 'react-simple-star-rating';
 
-const StarRank = () => { // Parantez ekledik ve fonksiyonel bileşeni doğru şekilde tanımladık
-  const [rating, setRating] = useState(0);
+const StarRank = ({ filmRate }) => { // Parametre adını "filmRate" olarak düzelttik
+  const [ratingValue, setRatingValue] = useState(filmRate/2);
 
-  // Catch Rating value
-  const handleRating = (rate) => {
-    setRating(rate);
+  
+ 
 
-    // other logic
-  };
-  // Optinal callback functions
-  const onPointerEnter = () => console.log('Enter');
-  const onPointerLeave = () => console.log('Leave');
-  const onPointerMove = (value, index) => console.log(value, index);
-
-  return (
-    <div className='App'>
-      <Rating
-        onClick={handleRating}
-        onPointerEnter={onPointerEnter}
-        onPointerLeave={onPointerLeave}
-        onPointerMove={onPointerMove}
-        /* Available Props */
-      />
-    </div>
+  return ( 
+    <Rating allowHover={false} allowFraction  initialValue={filmRate/2} /> 
   );
 };
 
