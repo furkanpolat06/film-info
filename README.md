@@ -1,5 +1,8 @@
 # Film Rating Project
 
+## Live site: 
+https://furkanpolat06-film-site.netlify.app/
+
 This project allows the user to navigate among movies from specific years and rate each movie with a star rating. Movies are listed with details such as title, description, tags, and rating. When a user selects a movie, more information about the movie is displayed, and the user can rate the movie using a star rating system.
 
 ## Features
