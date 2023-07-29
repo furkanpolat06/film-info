@@ -5,6 +5,7 @@ import MovieDetails from '../components/MovieDetails';
 import { data } from '../helper/data';
 import Box from '@mui/material/Box';
 
+
 const Main = () => {
   const [yearItem, setYearItem] = useState('');
   const [clickedButtonId, setClickedButtonId] = useState(null);
@@ -13,13 +14,19 @@ const Main = () => {
     setYearItem(item);
     setClickedButtonId(item.id);
   };
+  
 
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'row', marginLeft: '20vw', marginTop: '10vw' }} spacing={2}>
+    <div>
+     
+    <Box 
+    sx={{ display: 'flex', flexDirection: 'column', marginLeft: '20vw', marginTop: '10vw' }} spacing={2}>
+      
       
       <MovieList  data={data} handleClick={handleClick} clickedButtonId={clickedButtonId} />
       <MovieDetails yearItem={yearItem} />
     </Box>
+      </div>
   );
 };
 

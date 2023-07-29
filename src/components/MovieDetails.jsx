@@ -10,19 +10,19 @@ const MovieDetails = ({ yearItem }) => {
   return (
     <div>
       {yearItem && (
-        <Card sx={{ maxWidth: 800, minHeight: 240, margin: '10px' }}>
+        <Card sx={{backgroundColor:"beige", maxWidth: 600, minHeight: 240, margin: '10px '  }}>
           <CardActionArea>
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
+            <CardContent >
+              <Typography  gutterBottom variant="h4" component="div">
                 {yearItem.title}
               </Typography>
               <Typography variant="body2">{yearItem.body}</Typography>
-              <Typography variant="body2" color="red">
+              <Typography sx={{marginTop: '15px'}}  variant="body2" color="red">
                 {yearItem.tags.join(' / ')}
               </Typography>
-              <Typography spacing={2} variant="body2" color="red" sx={{ display: 'flex', alignItems: 'center' }}>
+              <Typography spacing={5} variant="body2" color="red" sx={{ display: 'flex', alignItems: 'center'  }}>
                 <StarRank filmRate={yearItem.rate} />
-                <Typography sx={{ fontSize: 'h5.fontSize', marginLeft: '15px' }}>
+                <Typography sx={{ fontSize: 'h5.fontSize', margin: '15px' }}>
                   {' '}
                   {yearItem.rate.toFixed(2)} / 10{' '}
                 </Typography>

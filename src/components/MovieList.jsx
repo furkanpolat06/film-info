@@ -5,7 +5,7 @@ import { Box } from '@mui/material';
 
 const MovieList = ({ data, handleClick, clickedButtonId }) => {
   return (
-    <Box sx={{ display: "flex", flexDirection: "column" }}> 
+    <Box sx={{ margin: '10px ', maxWidth:"620px", display:"grid", justifyContent:"center", gridTemplateColumns:"repeat(6, 1fr)" }}> 
       {data.map((item) => (
         <Button
           key={item.id}
