@@ -10,7 +10,7 @@ const MovieDetails = ({ yearItem }) => {
   return (
     <div>
       {yearItem && (
-        <Card sx={{backgroundColor:"beige", maxWidth: 600, minHeight: 240, margin: '10px '  }}>
+        <Card sx={{backgroundColor:"beige", maxWidth: 550, minHeight: 240, margin: '10px '  }}>
           <CardActionArea>
             <CardContent >
               <Typography  gutterBottom variant="h4" component="div">

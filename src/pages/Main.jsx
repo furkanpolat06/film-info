@@ -14,13 +14,13 @@ const Main = () => {
     setYearItem(item);
     setClickedButtonId(item.id);
   };
-  
+
 
   return (
-    <div>
+    <div className='main'>
      
     <Box 
-    sx={{ display: 'flex', flexDirection: 'column', marginLeft: '20vw', marginTop: '10vw' }} spacing={2}>
+    sx={{ display: 'flex', flexDirection: 'column',  }} spacing={2}>
       
       
       <MovieList  data={data} handleClick={handleClick} clickedButtonId={clickedButtonId} />
