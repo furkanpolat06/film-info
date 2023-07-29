@@ -9,15 +9,19 @@ const Main = () => {
   const handleClick = (item) => {
     setYearItem(item);
   };
-
+console.log(yearItem);
   return (
+
     <Stack spacing={2}>
       {data.map((item) => (
         <Button key={item.id} onClick={() => handleClick(item)} variant="outlined">
           {item.date}
         </Button>
       ))}
+
+      <p>{yearItem.body}</p>
     </Stack>
+    
   );
 };
 
