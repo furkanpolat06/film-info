@@ -23,7 +23,7 @@ This project allows the user to navigate among movies from specific years and ra
 
 ## Screenshots
 
-![Film Rating Project](screenshot.png)
+![Film Rating Project](film-info.gif)
 
 ## Notes
 
